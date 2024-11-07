@@ -4,6 +4,8 @@ conda init bash
 conda activate dl
 python "C:\\Users\\admin\\Desktop\\rep2_for github\\git_push.py"
 
+sleep 20
+
 # 启动 SSH 代理
 eval $(ssh-agent -s)
 
