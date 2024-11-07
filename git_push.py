@@ -27,30 +27,6 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 
-import git
 
-new_name = 'captured_photo.jpg'
-repo_path = save_path
 
-new_name = 'captured_photo.jpg'
-repo = git.Repo(repo_path)
-
-import subprocess
-
-# 启动 Bash 脚本的方法
-def run_bash_script(script_path):
-    try:
-        result = subprocess.run(['bash', script_path], capture_output=True, text=True)
-        if result.returncode == 0:
-            print("脚本执行成功。")
-            print(result.stdout)
-        else:
-            print("脚本执行失败。")
-            print(result.stderr)
-    except Exception as e:
-        print(f"发生错误：{e}")
-
-# 调用示例
-script_path = 'C:\Users\admin\Desktop\rep2_for github\git_push.sh'
-run_bash_script(script_path)
 
