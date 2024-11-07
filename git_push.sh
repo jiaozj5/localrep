@@ -1,4 +1,8 @@
 #!/bin/bash
+
+conda activate dl
+python C:\\Users\\admin\\Desktop\\rep2_for github\\git_push.py
+
 # 启动 SSH 代理
 eval $(ssh-agent -s)
 
@@ -16,3 +20,5 @@ git push -u origin master
 
 # 输出完成信息
 echo "Git push 完成"
+
+
