@@ -1,6 +1,6 @@
 #!/bin/bash
 
-conda init 
+conda init bash
 conda activate dl
 python C:\\Users\\admin\\Desktop\\rep2_for github\\git_push.py
 
