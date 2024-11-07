@@ -2,7 +2,7 @@
 
 conda init bash
 conda activate dl
-python C:\\Users\\admin\\Desktop\\rep2_for github\\git_push.py
+python "C:\\Users\\admin\\Desktop\\rep2_for github\\git_push.py"
 
 # 启动 SSH 代理
 eval $(ssh-agent -s)
@@ -15,6 +15,9 @@ git add .
 
 # 提交更改
 git commit -m "Your commit message"
+
+# 拉取远程更改以避免冲突
+git pull origin master --rebase
 
 # 推送更改到远程仓库
 git push -u origin master
