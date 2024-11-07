@@ -4,7 +4,10 @@ conda init bash
 conda activate dl
 python "C:\\Users\\admin\\Desktop\\rep2_for github\\git_push.py"
 
-sleep 20
+if [ $? -ne 0 ]; then
+    echo "Python 程序执行失败，退出脚本。"
+    exit 1
+fi
 
 # 启动 SSH 代理
 eval $(ssh-agent -s)
