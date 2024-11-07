@@ -16,11 +16,8 @@ git add .
 # 提交更改
 git commit -m "Your commit message"
 
-# 拉取远程更改以避免冲突
-git pull origin master --rebase
-
-# 推送更改到远程仓库
-git push -u origin master
+# 强制推送更改到远程仓库，覆盖 GitHub 上的 master 分支
+git push -u origin master --force
 
 # 输出完成信息
 echo "Git push 完成"
